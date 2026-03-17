@@ -24,7 +24,7 @@ const HeroSection = () => {
   }, [next]);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 md:pt-28">
       {/* Background slideshow */}
       <AnimatePresence mode="wait">
         <motion.div
@@ -95,7 +95,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.7 }}
-          className="font-display text-5xl md:text-7xl lg:text-8xl font-black tracking-tight"
+          className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black tracking-tight"
         >
           <span className="text-gradient-gold">HINDU COLLEGE</span>
         </motion.h1>
@@ -104,7 +104,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.7 }}
-          className="font-display text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mt-2"
+          className="font-display text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mt-2"
         >
           OF ENGINEERING
         </motion.h2>
