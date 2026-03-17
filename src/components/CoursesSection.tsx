@@ -68,7 +68,9 @@ const CoursesSection = () => (
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <Users size={14} className="text-primary" /> {c.seats}
                 </div>
-              </div>
+                <Link to={`/course/${c.id}`} className="flex items-center gap-1 text-sm text-primary hover:underline mt-2">
+                  View Branches <ArrowRight size={14} />
+                </Link>
             </div>
           </AnimatedSection>
         ))}
