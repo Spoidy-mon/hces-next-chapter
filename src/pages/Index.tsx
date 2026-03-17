@@ -4,6 +4,7 @@ import SocialSidebar from "@/components/SocialSidebar";
 import AboutSection from "@/components/AboutSection";
 import LeadershipSection from "@/components/LeadershipSection";
 import CoursesSection from "@/components/CoursesSection";
+import CampusGallery from "@/components/CampusGallery";
 import WhyHCESection from "@/components/WhyHCESection";
 import NewsSection from "@/components/NewsSection";
 import PlacementsSection from "@/components/PlacementsSection";
@@ -18,6 +19,7 @@ const Index = () => (
     <AboutSection />
     <LeadershipSection />
     <CoursesSection />
+    <CampusGallery />
     <WhyHCESection />
     <NewsSection />
     <PlacementsSection />

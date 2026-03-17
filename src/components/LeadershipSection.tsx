@@ -3,15 +3,19 @@ import AnimatedSection from "./AnimatedSection";
 
 const leaders = [
   {
-    quote: "At HCE, we believe in nurturing not just engineers, but leaders who will shape the future. Our commitment to excellence in education and holistic development remains unwavering.",
-    name: "Sh. Mahender Pratap Singh",
-    role: "CHAIRMAN",
+    quote:
+      "Hindu College of Engineering is among the oldest institutions in Sonepat and Haryana as well offering excellence in management and IT education. Since the inception of H.C.E. our aim is to offer integral formation to the students whereby students are encouraged to nurture their intellectual, emotional, spiritual and social persona to evolve as well rounded human beings.",
+    name: "Chairman",
+    role: "CHAIRMAN'S MESSAGE",
+    image: "/images/chairman.jpeg",
     align: "left" as const,
   },
   {
-    quote: "We strive to create an environment where innovation thrives. Our students are equipped with cutting-edge knowledge and the confidence to tackle real-world challenges head-on.",
-    name: "Dr. Rajesh Kumar",
-    role: "PRINCIPAL",
+    quote:
+      "Nowadays, in the world of competition, any institute shall have to excel with perfection to survive. Our objective is to impart education with creation, dissemination and application of knowledge in an integrated form. A regular student–faculty interaction helps in grooming the students into leaders and not simply the technocrats.",
+    name: "Principal",
+    role: "PRINCIPAL'S MESSAGE",
+    image: null,
     align: "right" as const,
   },
 ];
@@ -30,21 +34,24 @@ const LeadershipSection = () => (
         {leaders.map((l, i) => (
           <AnimatedSection key={i} delay={i * 0.15}>
             <div className="glass-card">
-              <div className={`flex flex-col ${l.align === "right" ? "items-end text-right" : "items-start text-left"} gap-4`}>
-                {l.align === "left" && (
-                  <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                    <Quote size={20} className="text-primary" />
-                  </div>
+              <div className={`flex flex-col md:flex-row gap-6 ${l.align === "right" ? "md:flex-row-reverse" : ""} items-center`}>
+                {l.image && (
+                  <img
+                    src={l.image}
+                    alt={l.name}
+                    className="w-32 h-32 md:w-40 md:h-40 rounded-xl object-cover border-2 border-primary/30 shrink-0"
+                    loading="lazy"
+                  />
                 )}
-                <p className="text-muted-foreground italic leading-relaxed max-w-3xl">"{l.quote}"</p>
-                {l.align === "right" && (
-                  <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                    <Quote size={20} className="text-primary" />
+                <div className={`${l.align === "right" ? "text-right" : "text-left"} flex-1`}>
+                  <div className={`w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center mb-3 ${l.align === "right" ? "ml-auto" : ""}`}>
+                    <Quote size={18} className="text-primary" />
                   </div>
-                )}
-                <div>
-                  <p className="text-foreground font-semibold">{l.name}</p>
-                  <p className="text-primary text-xs font-mono tracking-widest">{l.role}</p>
+                  <p className="text-muted-foreground italic leading-relaxed">"{l.quote}"</p>
+                  <div className="mt-4">
+                    <p className="text-foreground font-semibold">{l.name}</p>
+                    <p className="text-primary text-xs font-mono tracking-widest">{l.role}</p>
+                  </div>
                 </div>
               </div>
             </div>

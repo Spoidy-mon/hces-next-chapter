@@ -11,10 +11,13 @@ const AboutSection = () => (
   <section id="about" className="py-24 star-bg">
     <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
       <AnimatedSection>
-        <div className="glass-card aspect-[4/5] flex items-center justify-center relative overflow-hidden">
-          <div className="absolute w-48 h-48 border border-primary/40 rounded-full top-1/4 left-1/4" />
-          <div className="absolute w-32 h-32 border border-muted-foreground/20 rounded-full bottom-1/3 left-1/3" />
-          <p className="text-muted-foreground text-sm font-mono">Campus Image</p>
+        <div className="rounded-xl overflow-hidden border border-border">
+          <img
+            src="/images/about.jpg"
+            alt="HCE Campus"
+            className="w-full h-auto object-cover aspect-[4/5]"
+            loading="lazy"
+          />
         </div>
       </AnimatedSection>
 
@@ -28,14 +31,16 @@ const AboutSection = () => (
 
         <AnimatedSection delay={0.15}>
           <p className="text-muted-foreground mt-6 leading-relaxed">
-            Hindu College of Engineering (HCE), Sonepat was established in 1996 under the aegis
-            of Hindu Educational Society. Affiliated to Maharshi Dayanand University, Rohtak, HCE
-            has been a beacon of technical education in Haryana for over two decades.
+            The Hindu College of Engineering came into existence in 1999. The Institute is duly
+            approved by AICTE and is affiliated to Deenbandhu Chhotu Ram University of Science &
+            Technology, Murthal, Sonepat. Under the aegis of the Sonepat Hindu Educational and
+            Charitable Society, HCE has been a beacon of technical education in Haryana for over
+            two decades.
           </p>
           <p className="text-muted-foreground mt-4 leading-relaxed">
-            Our mission is to provide quality education that empowers students to become
-            innovative engineers and responsible citizens, contributing to the nation's
-            technological and social development.
+            Our aim is to offer integral formation to students whereby they are encouraged to
+            nurture their intellectual, emotional, spiritual and social persona to evolve as well
+            rounded human beings. The guiding philosophy has been to create knowledge.
           </p>
         </AnimatedSection>
 
