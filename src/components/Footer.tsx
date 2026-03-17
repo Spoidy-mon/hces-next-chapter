@@ -5,10 +5,13 @@ const Footer = () => (
     <div className="max-w-7xl mx-auto px-6 py-16">
       <div className="grid md:grid-cols-3 gap-12">
         <div>
-          <h3 className="font-display text-2xl font-bold mb-4">HCE SONEPAT</h3>
+          <div className="flex items-center gap-3 mb-4">
+            <img src="/images/logo.png" alt="HCE Logo" className="w-12 h-12 object-contain" />
+            <h3 className="font-display text-2xl font-bold">HCE SONEPAT</h3>
+          </div>
           <p className="text-primary-foreground/70 text-sm leading-relaxed">
             Hindu College of Engineering, Sonepat — Shaping engineers and
-            leaders since 1996. Affiliated to MDU Rohtak, Approved by AICTE New
+            leaders since 1999. Affiliated to DCRUST Murthal, Approved by AICTE New
             Delhi.
           </p>
         </div>
@@ -43,7 +46,7 @@ const Footer = () => (
             ))}
           </div>
           <p className="text-primary-foreground/70 text-sm">info@hcesonepat.ac.in</p>
-          <p className="text-primary-foreground/70 text-sm">+91-130-2484XXX</p>
+          <p className="text-primary-foreground/70 text-sm">0130-2212756</p>
         </div>
       </div>
     </div>
