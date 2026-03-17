@@ -4,20 +4,23 @@ import AnimatedSection from "./AnimatedSection";
 
 const courses = [
   {
+    id: "a1000000-0000-0000-0000-000000000001",
     name: "Diploma",
-    branches: "CSE, ME, CE, EE",
+    branches: "CE, CSE, EE, ECE, ME",
     duration: "3 Years",
     seats: "150 Seats",
     description: "Foundation program in core engineering disciplines with practical training and industry exposure.",
   },
   {
+    id: "a1000000-0000-0000-0000-000000000002",
     name: "B.Tech",
-    branches: "CSE, ME, CE, ECE",
+    branches: "CE, CSE, EE, ECE, ME",
     duration: "4 Years",
     seats: "270 Seats",
     description: "Comprehensive undergraduate engineering program affiliated to DCRUST, Murthal.",
   },
   {
+    id: "a1000000-0000-0000-0000-000000000004",
     name: "BCA",
     branches: "COMPUTER APPLICATIONS",
     duration: "3 Years",
@@ -25,8 +28,9 @@ const courses = [
     description: "Bachelor program focusing on software development, web technologies and AWS Academy.",
   },
   {
+    id: "a1000000-0000-0000-0000-000000000003",
     name: "M.Tech",
-    branches: "CSE, ME",
+    branches: "CSE, EE, ECE",
     duration: "2 Years",
     seats: "51 Seats",
     description: "Advanced postgraduate program for specialized research and industry-ready expertise.",
