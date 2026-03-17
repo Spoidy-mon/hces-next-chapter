@@ -71,6 +71,7 @@ const CoursesSection = () => (
                 <Link to={`/course/${c.id}`} className="flex items-center gap-1 text-sm text-primary hover:underline mt-2">
                   View Branches <ArrowRight size={14} />
                 </Link>
+              </div>
             </div>
           </AnimatedSection>
         ))}
