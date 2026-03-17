@@ -95,7 +95,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.7 }}
-          className="font-display text-5xl md:text-7xl lg:text-8xl font-black tracking-tight"
+          className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black tracking-tight"
         >
           <span className="text-gradient-gold">HINDU COLLEGE</span>
         </motion.h1>
