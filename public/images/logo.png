@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hindu Engineering College</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.eea9469b2f6d1dc982dc.css"></head>
+<body>
+  <app-root></app-root>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+<script src="runtime-es2015.a9441b83fd73083ab0ed.js" type="module"></script><script src="runtime-es5.a9441b83fd73083ab0ed.js" nomodule defer></script><script src="polyfills-es5.248a38b68f675214c25f.js" nomodule defer></script><script src="polyfills-es2015.5718c3f9c6f0190bf69a.js" type="module"></script><script src="scripts.25ab6257dee2611c8f0d.js" defer></script><script src="main-es2015.88fa16bd32e00ab5b948.js" type="module"></script><script src="main-es5.88fa16bd32e00ab5b948.js" nomodule defer></script></body>
+</html>
