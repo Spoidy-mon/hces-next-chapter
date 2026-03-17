@@ -24,7 +24,7 @@ const HeroSection = () => {
   }, [next]);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 md:pt-28">
       {/* Background slideshow */}
       <AnimatePresence mode="wait">
         <motion.div
