@@ -1,4 +1,5 @@
-import { GraduationCap, Clock, Users } from "lucide-react";
+import { GraduationCap, Clock, Users, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import AnimatedSection from "./AnimatedSection";
 
 const courses = [
