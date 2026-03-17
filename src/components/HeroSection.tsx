@@ -104,7 +104,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.7 }}
-          className="font-display text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mt-2"
+          className="font-display text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mt-2"
         >
           OF ENGINEERING
         </motion.h2>
