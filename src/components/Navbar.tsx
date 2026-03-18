@@ -236,7 +236,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-background/95 backdrop-blur-md border-b border-border overflow-hidden max-h-[80vh] overflow-y-auto"
+            className="xl:hidden bg-background/95 backdrop-blur-md border-b border-border overflow-hidden max-h-[80vh] overflow-y-auto"
           >
             <div className="px-4 py-4 flex flex-col gap-1">
               {navItems.map((item) => (
