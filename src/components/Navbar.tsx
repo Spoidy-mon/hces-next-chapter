@@ -195,7 +195,7 @@ const Navbar = () => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -4 }}
                     transition={{ duration: 0.15 }}
-                    className="absolute top-full left-0 min-w-[260px] bg-card border border-border rounded-b-lg shadow-xl z-50"
+                    className={`absolute top-full min-w-[260px] bg-card border border-border rounded-b-lg shadow-xl z-50 ${index <= 1 ? 'left-0' : index >= navItems.length - 2 ? 'right-0' : 'left-1/2 -translate-x-1/2'}`}
                     onMouseEnter={() => handleMouseEnter(item.label)}
                     onMouseLeave={handleMouseLeave}
                   >
