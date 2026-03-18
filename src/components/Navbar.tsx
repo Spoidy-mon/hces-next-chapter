@@ -119,7 +119,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 overflow-visible ${
         scrolled
           ? "bg-background/95 backdrop-blur-md border-b border-border shadow-lg"
           : "bg-background/80 backdrop-blur-sm"
@@ -151,7 +151,7 @@ const Navbar = () => {
             Apply Now
           </button>
           <button
-            className="lg:hidden text-foreground"
+            className="xl:hidden text-foreground"
             onClick={() => setMobileOpen(!mobileOpen)}
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
@@ -160,25 +160,25 @@ const Navbar = () => {
       </div>
 
       {/* Desktop mega menu bar */}
-      <div className="hidden lg:block border-t border-border bg-card/80 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto px-4 flex items-center justify-center">
-          {navItems.map((item) => (
+      <div className="hidden xl:block border-t border-border bg-card/80 backdrop-blur-sm overflow-visible">
+        <div className="max-w-7xl mx-auto px-4 flex items-center justify-center overflow-visible">
+          {navItems.map((item, index) => (
             <div
               key={item.label}
-              className="relative"
+              className="relative static-dropdown"
               onMouseEnter={() => item.children && handleMouseEnter(item.label)}
               onMouseLeave={handleMouseLeave}
             >
               {item.href && !item.children ? (
                 <button
                   onClick={() => handleNavClick(item.href!)}
-                  className="flex items-center gap-1 px-3 py-3 text-xs font-semibold tracking-wider text-foreground/80 hover:text-primary transition-colors whitespace-nowrap"
+                  className="flex items-center gap-1 px-2 lg:px-3 py-3 text-[11px] lg:text-xs font-semibold tracking-wider text-foreground/80 hover:text-primary transition-colors whitespace-nowrap"
                 >
                   {item.label}
                 </button>
               ) : (
                 <button
-                  className={`flex items-center gap-1 px-3 py-3 text-xs font-semibold tracking-wider transition-colors whitespace-nowrap ${
+                  className={`flex items-center gap-1 px-2 lg:px-3 py-3 text-[11px] lg:text-xs font-semibold tracking-wider transition-colors whitespace-nowrap ${
                     openDropdown === item.label ? "text-primary" : "text-foreground/80 hover:text-primary"
                   }`}
                 >
@@ -195,7 +195,7 @@ const Navbar = () => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -4 }}
                     transition={{ duration: 0.15 }}
-                    className="absolute top-full left-0 min-w-[260px] bg-card border border-border rounded-b-lg shadow-xl z-50"
+                    className={`absolute top-full min-w-[260px] bg-card border border-border rounded-b-lg shadow-xl z-50 ${index <= 1 ? 'left-0' : index >= navItems.length - 2 ? 'right-0' : 'left-1/2 -translate-x-1/2'}`}
                     onMouseEnter={() => handleMouseEnter(item.label)}
                     onMouseLeave={handleMouseLeave}
                   >
@@ -236,7 +236,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-background/95 backdrop-blur-md border-b border-border overflow-hidden max-h-[80vh] overflow-y-auto"
+            className="xl:hidden bg-background/95 backdrop-blur-md border-b border-border overflow-hidden max-h-[80vh] overflow-y-auto"
           >
             <div className="px-4 py-4 flex flex-col gap-1">
               {navItems.map((item) => (
