@@ -13,6 +13,8 @@ const SocialSidebar = () => (
       <a
         key={label}
         href={href}
+        target="_blank"
+        rel="noopener noreferrer"
         aria-label={label}
         className="w-9 h-9 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors"
       >
