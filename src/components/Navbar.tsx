@@ -172,7 +172,7 @@ const Navbar = () => {
               {item.href && !item.children ? (
                 <button
                   onClick={() => handleNavClick(item.href!)}
-                  className="flex items-center gap-1 px-3 py-3 text-xs font-semibold tracking-wider text-foreground/80 hover:text-primary transition-colors whitespace-nowrap"
+                  className="flex items-center gap-1 px-2 lg:px-3 py-3 text-[11px] lg:text-xs font-semibold tracking-wider text-foreground/80 hover:text-primary transition-colors whitespace-nowrap"
                 >
                   {item.label}
                 </button>
