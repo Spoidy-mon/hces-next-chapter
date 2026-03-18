@@ -127,10 +127,11 @@ const Navbar = () => {
     >
       {/* Top bar with logo */}
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
-        <a href="#home" onClick={() => handleNavClick("#home")} className="flex items-center gap-2">
-          <img src="/images/hce-logo.png" alt="HCE" className="w-10 h-10 object-contain" />
+        <a href="#home" onClick={() => handleNavClick("#home")} className="flex items-center gap-3">
+          <img src="/images/hce-logo.png" alt="HCE" className="w-11 h-11 object-contain rounded-full" />
+          <img src="/images/society-logo.png" alt="HFROE" className="w-11 h-11 object-contain rounded-full hidden sm:block" />
           <div className="flex flex-col">
-            <span className="text-primary font-display text-lg font-bold leading-tight">HCE</span>
+            <span className="text-primary font-display text-lg font-bold leading-tight">HCE SONEPAT</span>
             <span className="text-muted-foreground text-[10px] leading-tight hidden sm:block">Hindu College of Engineering</span>
           </div>
         </a>

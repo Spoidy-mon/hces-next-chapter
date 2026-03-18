@@ -35,10 +35,17 @@ const Footer = () => (
         <div>
           <h4 className="font-bold text-sm tracking-widest mb-4">CONNECT</h4>
           <div className="flex gap-3 mb-4">
-            {[Instagram, Linkedin, Facebook, Youtube].map((Icon, i) => (
+            {[
+              { Icon: Instagram, href: "https://www.instagram.com/explore/locations/655964648/hindu-college-sonepat/" },
+              { Icon: Linkedin, href: "https://in.linkedin.com/in/hindu-college-of-engineering-1b8807133" },
+              { Icon: Facebook, href: "https://www.facebook.com/hceian/" },
+              { Icon: Youtube, href: "https://www.youtube.com/@hcesonepat" },
+            ].map(({ Icon, href }) => (
               <a
-                key={i}
-                href="#"
+                key={href}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-primary-foreground/15 flex items-center justify-center hover:bg-primary-foreground/25 transition-colors"
               >
                 <Icon size={18} />
