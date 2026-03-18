@@ -46,7 +46,7 @@ const AnnouncementTicker = () => {
   const allItems = [...announcements, ...announcements];
 
   return (
-    <div className="fixed top-16 md:top-20 left-0 right-0 z-[30] bg-primary/95 backdrop-blur-sm overflow-hidden">
+    <div className="fixed top-16 md:top-20 left-0 right-0 z-[20] bg-primary/95 backdrop-blur-sm overflow-hidden">
       <div ref={tickerRef} className="flex whitespace-nowrap py-2">
         {allItems.map((text, i) => (
           <span
