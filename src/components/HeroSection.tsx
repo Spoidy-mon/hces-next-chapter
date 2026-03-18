@@ -79,7 +79,7 @@ const HeroSection = () => {
           transition={{ delay: 0.2 }}
           className="flex items-center justify-center gap-4 mb-6"
         >
-          <img src="/images/logo.png" alt="HCE Logo" className="w-16 h-16 md:w-20 md:h-20 object-contain" />
+          <img src="/images/hce-logo.png" alt="HCE Logo" className="w-16 h-16 md:w-20 md:h-20 object-contain" />
         </motion.div>
 
         <motion.p

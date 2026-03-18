@@ -161,11 +161,11 @@ const Navbar = () => {
 
       {/* Desktop mega menu bar */}
       <div className="hidden lg:block border-t border-border bg-card/80 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto px-4 flex items-center justify-center">
-          {navItems.map((item) => (
+        <div className="max-w-7xl mx-auto px-4 flex items-center justify-center overflow-visible">
+          {navItems.map((item, index) => (
             <div
               key={item.label}
-              className="relative"
+              className="relative static-dropdown"
               onMouseEnter={() => item.children && handleMouseEnter(item.label)}
               onMouseLeave={handleMouseLeave}
             >

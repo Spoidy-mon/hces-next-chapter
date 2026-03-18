@@ -6,7 +6,7 @@ const Footer = () => (
       <div className="grid md:grid-cols-3 gap-12">
         <div>
           <div className="flex items-center gap-3 mb-4">
-            <img src="/images/logo.png" alt="HCE Logo" className="w-12 h-12 object-contain" />
+            <img src="/images/hce-logo.png" alt="HCE Logo" className="w-12 h-12 object-contain" />
             <h3 className="font-display text-2xl font-bold">HCE SONEPAT</h3>
           </div>
           <p className="text-primary-foreground/70 text-sm leading-relaxed">
