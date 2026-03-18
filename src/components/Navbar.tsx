@@ -160,7 +160,7 @@ const Navbar = () => {
       </div>
 
       {/* Desktop mega menu bar */}
-      <div className="hidden lg:block border-t border-border bg-card/80 backdrop-blur-sm overflow-visible">
+      <div className="hidden xl:block border-t border-border bg-card/80 backdrop-blur-sm overflow-visible">
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-center overflow-visible">
           {navItems.map((item, index) => (
             <div
