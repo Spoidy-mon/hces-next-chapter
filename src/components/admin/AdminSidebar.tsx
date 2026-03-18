@@ -32,7 +32,7 @@ const AdminSidebar = ({ activeTab, setActiveTab, onLogout }: Props) => {
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>
-            <img src="/images/logo.png" alt="HCE" className="w-6 h-6 mr-2" />
+            <img src="/images/hce-logo.png" alt="HCE" className="w-6 h-6 mr-2" />
             {!collapsed && "HCE Admin"}
           </SidebarGroupLabel>
           <SidebarGroupContent>
