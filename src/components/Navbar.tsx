@@ -178,7 +178,7 @@ const Navbar = () => {
                 </button>
               ) : (
                 <button
-                  className={`flex items-center gap-1 px-3 py-3 text-xs font-semibold tracking-wider transition-colors whitespace-nowrap ${
+                  className={`flex items-center gap-1 px-2 lg:px-3 py-3 text-[11px] lg:text-xs font-semibold tracking-wider transition-colors whitespace-nowrap ${
                     openDropdown === item.label ? "text-primary" : "text-foreground/80 hover:text-primary"
                   }`}
                 >
