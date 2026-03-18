@@ -151,7 +151,7 @@ const Navbar = () => {
             Apply Now
           </button>
           <button
-            className="lg:hidden text-foreground"
+            className="xl:hidden text-foreground"
             onClick={() => setMobileOpen(!mobileOpen)}
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
